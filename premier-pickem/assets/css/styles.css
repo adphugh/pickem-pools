@@ -1,0 +1,141 @@
+/*
+Premier pickem stylesheet
+by: Adam Hughes
+*/
+
+/*** LAYOUT ***/
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*** TYPOGRAPHY ***/
+
+h2 { line-height:1.154em; }
+h3 { line-height:1.136em; }
+h4 { line-height:1.11em; }
+
+/*** COLORS
+
+$richblack: rgba(6,8,8,0);
+$orangepp: rgba(250,53,12,0);
+$redpp: rgba(227,0,0,0);
+$bluepp: rgba(18,115,176,0);
+***/
+
+/*** LINKS ***/
+a:active {
+	color:rgba(18,115,176,0);
+}
+
+a:link, a:visited {
+	color:rgba(250,53,12,0);
+}
+
+a:hover {
+	color:rgba(227,0,0,0);
+}
+
+/*** LAYOUT ***/
+.jumbotron {
+  background:url(https://picsum.photos/219/200) center center;
+  background-size:cover;
+}
+.card-body h3 {
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(6,8,8,0.9);
+  color:white;
+  padding:1.25rem;
+}
+
+footer i {
+  padding:0px 10px;
+  height:20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 0px; margin-bottom: 0px;
+}
+
+/*** MEDIA QUERIES ***/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+/*** TYPOGRAPHY ***/
+	h1 { font-size:40px; }
+	h2 { font-size:32px; }
+	h3 { font-size:24px; }
+
+	body {
+		font-size:18px;
+	}
+
+
+/*** LAYOUT ***/
+	nav bg-dark {
+		background-color:rgba(6,8,8,0);
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+/*** TYPOGRAPHY ***/
+
+	h1 { font-size:40px; }
+	h2 { font-size:32px; }
+	h3 { font-size:24px; }
+
+	body {
+		font-size:18px;
+	}
+
+
+/*** LAYOUT ***/
+footer p { font-size: inherit; }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+/*** TYPOGRAPHY ***/
+
+	h1 {
+		font-size:42px;
+		line-height: 1.05em;
+	}
+	h2 { font-size:36px; }
+	h3 { font-size:28px; }
+	h4 { font-size:21px; }
+
+	h2, h3, h4 { line-height: 1.25em; }
+
+
+
+/*** LAYOUT ***/
+	body {
+			line-height:1.375em;
+		}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+/*** TYPOGRAPHY ***/
+
+h2 { line-height:1.154em; }
+h3 { line-height:1.136em; }
+h4 { line-height:1.11em; }
+
+
+
+/*** LAYOUT ***/
+}

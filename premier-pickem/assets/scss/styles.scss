@@ -1,0 +1,114 @@
+/*
+Premier pickem stylesheet
+by: Adam Hughes
+*/
+
+/*** LAYOUT ***/
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*** TYPOGRAPHY ***/
+
+h2 { line-height:1.154em; }
+h3 { line-height:1.136em; }
+h4 { line-height:1.11em; }
+
+/*** COLORS ***/
+
+$richblack: rgba(6,8,8,0);
+$orangepp: rgba(250,53,12,0);
+$redpp: rgba(227,0,0,0);
+$bluepp: rgba(18,115,176,0);
+
+
+/*** LINKS ***/
+a:active {
+	color: $bluepp;
+}
+
+a:link, a:visited {
+	color: $orange;
+}
+
+a:hover {
+	color:$redpp
+}
+
+/*** MEDIA QUERIES ***/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	
+/*** TYPOGRAPHY ***/
+	h1 { font-size:40px; }
+	h2 { font-size:32px; }
+	h3 { font-size:24px; }
+
+	body {
+		font-size:18px;
+	}
+
+
+/*** LAYOUT ***/
+	nav bg-dark {
+		color:$richblack;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+/*** TYPOGRAPHY ***/
+
+	h1 { font-size:40px; }
+	h2 { font-size:32px; }
+	h3 { font-size:24px; }
+
+	body {
+		font-size:18px;
+	}
+
+
+/*** LAYOUT ***/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+/*** TYPOGRAPHY ***/
+
+	h1 { 
+		font-size:42px;
+		line-height: 1.05em;
+	}
+	h2 { font-size:36px; }
+	h3 { font-size:28px; }
+	h4 { font-size:21px; }
+	
+	h2, h3, h4 { line-height: 1.25em; }
+
+
+
+/*** LAYOUT ***/
+	body {
+			line-height:1.375em;
+		}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+/*** TYPOGRAPHY ***/
+
+h2 { line-height:1.154em; }
+h3 { line-height:1.136em; }
+h4 { line-height:1.11em; }
+
+
+
+/*** LAYOUT ***/
+}

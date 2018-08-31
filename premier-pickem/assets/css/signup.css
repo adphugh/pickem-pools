@@ -1,0 +1,41 @@
+/*
+Premier pickem stylesheet - signup page
+by: Adam Hughes
+*/
+
+body {
+  background:url("https://picsum.photos/219/200?random") center center fixed;
+}
+
+/*** LAYOUT ***/
+.container {
+  width: 600px;
+}
+
+.signup {
+  background-color: rgba(32,220,133,0.9);
+  border:2px solid #e0e0e0;
+  border-radius: 15px;
+  color:#fff;
+  margin:50px auto;
+}
+
+.signup h1 { line-height: 1.6em; }
+
+.signup button {
+  background-color:rgba(227,0,0,1.0);
+  color:white;
+  border:2px solid rgba(227,0,0,1.0);
+  border-radius: 4px;
+}
+
+.signup label {
+  line-height: 1.8em
+}
+
+.signup [type="submit"] {
+  background-color:rgba(18,115,176,1.0);
+  border-color:rgba(18,115,176,1.0);
+  border-radius:5px;
+  color:#fff;
+}
